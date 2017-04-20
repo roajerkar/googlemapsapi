@@ -1,0 +1,22 @@
+#%RAML 1.0
+title: placeholder
+version: 1.0.development
+#baseUri: http://localhost.typicode.com
+baseUri: https://mocksvc.mulesoft.com/mocks/3d6a8fd4-e08c-4c59-8cfe-db412442cc60
+/geocoding:
+  get:
+    queryParameters: 
+      lat:
+        default: "32"
+      lang:
+        default: "32"
+    responses:
+      200:
+        body: 
+          application/json:
+            example: |
+              [{
+              "lat": "40.714224",
+              "lng": ",-73.961452"
+               }
+              ]
